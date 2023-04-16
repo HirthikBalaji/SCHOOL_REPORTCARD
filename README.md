@@ -47,33 +47,19 @@ pip install -r reqirements.txt
 ```
 
 ## Usage
-### Adding a Principal's Signature
-
-To add a principal's signature to a PDF document, use the add_principal_sign function.
-
-```python
-from helper import add_principal_sign
-
-# input_path: path to the input PDF file
-# image_path: path to the principal's signature image
-add_principal_sign(input_path, image_path)
-```
-
-The output file will be saved as <input_file_name>_Signed_fully.pdf.
-
 ### Adding a Class Teacher's Signature
 
 To add a class teacher's signature to a PDF document, use the add_class_teacher_sign function.
 
 ```python
-from helper import add_class_teacher_sign
+from helper import add_signature
 
 # input_path: path to the input PDF file
 # image_path: path to the class teacher's signature image
-add_class_teacher_sign(input_path, image_path)
+add_signature(input_path, image_path)
 ```
 
-The output file will be saved as <input_file_name>_signed.pdf.
+The output file will be saved as <input_file_name>_Signed_fully.pdf
 
 ### Encrypting a PDF Document
 
